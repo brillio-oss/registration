@@ -53,14 +53,14 @@ commands:
 executors:
   ruby:
     docker:
-      - image: circleci/ruby:2.6.1-node-browsers
+      - image: circleci/ruby:2.6.3-node-browsers
     environment:
       BUNDLE_PATH: /home/circleci/project/vendor/bundle
       BUNDLER_VERSION: 2.0.2
       RAILS_ENV: test
   rails:
     docker:
-      - image: circleci/ruby:2.6.1-node-browsers
+      - image: circleci/ruby:2.6.3-node-browsers
       - image: circleci/postgres:11.1-alpine
         environment:
           POSTGRES_USER: root
