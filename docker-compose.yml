@@ -1,15 +1,15 @@
-version: "3.4"
+version: '3.4'
 
 x-app: &app
   build:
     context: .
     dockerfile: ./.docker/Dockerfile
     args:
-      RUBY_VERSION: "2.6.3"
-      PG_MAJOR: "11"
-      NODE_MAJOR: "11"
-      YARN_VERSION: "1.13.0"
-      BUNDLER_VERSION: "2.0.2"
+      RUBY_VERSION: '2.6.3'
+      PG_MAJOR: '11'
+      NODE_MAJOR: '11'
+      YARN_VERSION: '1.19.0'
+      BUNDLER_VERSION: '2.0.2'
   environment: &env
     NODE_ENV: development
     RAILS_ENV: ${RAILS_ENV:-development}
@@ -47,8 +47,8 @@ services:
     <<: *backend
     command: /bin/bash
     ports:
-      - "3000:3000"
-      - "3002:3002"
+      - '3000:3000'
+      - '3002:3002'
 
   rails:
     <<: *backend
@@ -82,7 +82,7 @@ services:
     <<: *app
     command: ./bin/webpack-dev-server
     ports:
-      - "3035:3035"
+      - '3035:3035'
     volumes:
       - .:/app:cached
       - bundle:/bundle

@@ -12,11 +12,11 @@ This repo follows `git flow` workflow design for ease of use. Refer this [cheats
 
 Refer to the project section of the repo to know the roadmap.
 
-* Ruby version - 2.6.3
+- Ruby version - 2.6.3
 
-* System dependencies - Docker, Docker-Compose. [Install for mac](https://docs.docker.com/docker-for-mac/install/)
+- System dependencies - Docker, Docker-Compose. [Install for mac](https://docs.docker.com/docker-for-mac/install/)
 
-* Setup - `docker-compose build`
+- Setup - `docker-compose build`
 
           `docker-compose run runner bash -c ./bin/setup`
 
@@ -24,7 +24,7 @@ Refer to the project section of the repo to know the roadmap.
 
           `docker-compose up rails`. Now you can visit localhost:3000 to see the website up and running.
 
-* Services (job queues, cache servers, search engines, etc.)
+- Services (job queues, cache servers, search engines, etc.)
 
   - Rails - Starts the server
   - Runner - To run every single command. Think of it as bash
@@ -35,4 +35,4 @@ Refer to the project section of the repo to know the roadmap.
 
 You can run each of these individually or in combination. See docker-compose.yml for more details
 
-* Deployment instructions - To follow
+- Deployment instructions - To follow
