@@ -42,12 +42,16 @@
     }
   },
   "scripts": {
+    "dev": "docker-compose up rails webpacker",
+    "dev:cleanup": "docker-compose down",
+    "console": "docker-compose run --rm runner",
     "fix:other": "yarn prettier --write",
     "fix:js": "yarn lint:js --fix",
     "fix": "yarn fix:js && yarn fix:other",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
     "lint:other": "yarn prettier --list-different",
     "lint:js": "eslint --ignore-path .gitignore --ignore-path .prettierignore \"**/*.{js,jsx}\"",
-    "lint": "yarn lint:other && yarn lint:js"
+    "lint": "yarn lint:other && yarn lint:js",
+    "setup": "yarn console bash -c ./bin/setup"
   }
 }

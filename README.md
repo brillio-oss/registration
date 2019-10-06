@@ -20,9 +20,13 @@ Refer to the project section of the repo to know the roadmap.
 
           `docker-compose run runner bash -c ./bin/setup`
 
-          `docker-compose up -d webpacker` to run webpacker in background. This compiles our javascript.
+          `docker-compose up -d webpacker` to run webpacker in background. This compiles our javascript in detatched mode.
 
           `docker-compose up rails`. Now you can visit localhost:3000 to see the website up and running.
+
+          Alternatively, you can run `yarn setup` to setup and `yarn dev` to start developing.
+
+          Don't forget to cleanup after developing with `yarn dev:cleanup`. This will stop all the services and removes the network connections.
 
 - Services (job queues, cache servers, search engines, etc.)
 
