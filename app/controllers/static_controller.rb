@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-  def index
-    
-  end
+
+  # Add page not found logic for invalid routes
+  def index;end
 end

@@ -73,8 +73,8 @@ executors:
       DATABASE_URL: postgresql://root@localhost:5432/circle_test
       REDIS_URL: redis://localhost:6379/0
       BOOTSNAP_CACHE_DIR: tmp/bootsnap
-      EVENT_PROF: "factory.create,sql.active_record"
-      EAGER_LOAD: "1"
+      EVENT_PROF: 'factory.create,sql.active_record'
+      EAGER_LOAD: '1'
   node:
     docker:
       - image: circleci/node:11.8.0-stretch
