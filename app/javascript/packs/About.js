@@ -1,5 +1,5 @@
 import React from 'react';
 
-const About = props => <div>Hello {props.name}!</div>;
+const About = () => <div>About!</div>;
 
 export default About;

@@ -1,10 +1,7 @@
-import {Router} from '@reach/router';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import About from './About';
-import Contact from './Contact';
-import Home from './Home';
+import App from './App';
 
 require('@rails/ujs').start();
 require('@rails/activestorage').start();
@@ -16,11 +13,7 @@ ReactRailsUJS.useContext(componentRequireContext);
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Router>
-      <Home path="/" />
-      <About path="/about" />
-      <Contact path="/contact" />
-    </Router>,
+    <App />,
     document.body.appendChild(document.createElement('div')),
   );
 });

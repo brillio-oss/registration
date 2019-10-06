@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Contact = props => <div>Hello {props.name}!</div>;
+const Contact = () => <div>Contact</div>;
 
 export default Contact;
